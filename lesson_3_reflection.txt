@@ -15,12 +15,20 @@ automatically stay up-to-date with your remote repository?
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
-    Fill in your answer here
+    Forks are a github concept of making a clone of an existing repository
+    Clones are those which are a copy of an existing remote repository into 
+    a local repository, they can also be a copy of an existing local repo
+    Branches are just labels given to a commit and there could be multiple
+    branches in a given repository. can be seen by git branch
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
-    Fill in your answer here
+    It is good to have a local copy of the remote branch from the last time 
+    we ran git clone or git pull. It helps with conflict resolutions when 
+    others could be updating the remote branch and also to be able to diff 
+    and see what changes have been introduced in the remote and if you want
+     to include that or how to merge it and push back your local updates
 
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
