@@ -12,14 +12,49 @@ working directory to the repository
 
 How can you use the staging area to make sure you have one commit per logical
 change?
+We can add which files we want to commit into the staging area and then commit
+Also we can run git diff --staged to see the changes you are trying to commit 
+and helps with identifying if the changes going in are logical for one commit
+
 
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+Branches are extremely useful. One of the situations is when we have a 
+production bug-fix to release and we already are working ona new version of the
+software/product. We can create a branch from teh version we released into 
+production and get the changes done and then merge the change back into the 
+master branch
+
 
 How do the diagrams help you visualize the branch structure?
+Diagrams of the branch structure was really cool. It clearly shows where we are
+, what was the parent of the recent commig on a branch and where a branch 
+originated. It will be handy to do merging when we finish work on the branch 
+and ready to put it into the master branch for release
 
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
+When we merge two branches, the branch where we are currently on will get 
+updated with the changes from the two branches we specify in the git merge
+command alongwith the changes on the curent branch, typically we run merge by 
+been in the branch where we want the changes to be merged into. It gets changes
+ from the branch from where we want the changes into the current branch compare
+ d with the version from where the two branches have split.
+ So the diagram showing the commits and updating it with the result of the 
+ merge helps visualize the versions been compared and how the current branch is
+ updated with teh result of the merge and a new commit is added and then git 
+ log shows all the commits interspersed by timestamp from both branches
 
 What are the pros and cons of Git’s automatic merging vs. always doing merges
 manually?
+We do need automtic merging which git does to easily include changes worked 
+in two different branches and getting it all together. quite a few times we 
+would work on a new feature or change which doesn't affect the code which is 
+say in the production branch or master, if we didn't have automtic merging, it 
+would be very tedious to redo all the changes from our feature branch into the
+master.
+On the other hand, if all we had was automatic merging, then some changes which
+ affect the same piece of code in two branches would get merged and result 
+ would be unclear code or worse uncompiled code which would break, so we also 
+ have this feature of conflict resolution to manually fix the merge for some
+ files
