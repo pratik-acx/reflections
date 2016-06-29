@@ -43,4 +43,8 @@ and what would be harder?
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
-    Fill in your answer here
+    As we saw, if working in a collaborative environment, you will want to 
+    show the work you have been doing but not fully ready to merge into master
+    as that is a more production release branch, in that case, working in a 
+    branch is more appropriate and you can create pull requests for others to 
+    provide feedback and comments before making it ready for release in master
